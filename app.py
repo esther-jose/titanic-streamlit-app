@@ -15,7 +15,7 @@ fare = st.slider("Fare Paid", 0.0, 500.0, 32.0)
 
 # Convert inputs
 sex_male = 1 if sex == "male" else 0
-input_data = np.array([[pclass, sex_male, age, fare]])
+input_data = np.array([[pclass, age, fare, sex_male]])  # FIXED ORDER
 
 # Predict
 if st.button("Predict"):
