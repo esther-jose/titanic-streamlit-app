@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load model
-model = joblib.load('logistic_model(1).pkl')
+model = joblib.load('logistic_model.pkl')
 
 st.title("🚢 Titanic Survival Prediction App")
 
